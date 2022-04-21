@@ -11,24 +11,24 @@ app = {                       # REQUIRED dict, must be named 'app'
     'macros' : [              # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE
         # 1st row ----------
-        (0x004000, 'Brush!', [Keycode.SHIFT, 'b']),
+        (0x004000, 'Undo', [Keycode.CONTROL, 'z']),
+        (0x004000, 'Redo', [Keycode.CONTROL, 'Z']),
         (0x000040, 'Brush', 'B'),   # Cycle brush modes
-        (0x000040, 'Eraser', 'E'),  # Cycle eraser modes
 
         # 2nd row ----------
-        (0x000040, 'B/W', 'd'),  # Cycle eraser modes
-        (0x0E0007, 'Brush+', ']', '[', '['),  # Brush+
         (0x000020, 'Brush-', '[', '[', '['),  # Brush-
-        
+        (0x0E0007, 'Brush+', ']', '[', '['),  # Brush+
+        (0x000040, 'Eraser', 'E'),  # Cycle eraser modes
+
         # 3rd row ----------
-        (0x101010, 'Zoom', 'z'),    # Swap foreground/background colors
-        (0x101010, 'Alt', [Keycode.ALT]),    # Move layer
-        (0x000040, 'Save', [Keycode.CONTROL, 's']),    # Cycle fill/gradient modes
+        (0x101010, 'Swap', 'x'),    # Swap foreground/background colors
+        (0x101010, 'Move', 'v'),    # Move layer
+        (0x000040, 'Fill', 'G'),    # Cycle fill/gradient modes
 
         # 4th row ----------
-        (0x101010, 'Rotate', 'r'), # Cycle eyedropper/measure modes
-        (0x101010, 'Pan', [Keycode.SPACE]),    # Cycle "magic wand" (selection) modes
-        (0x000040, 'Undo', [Keycode.CONTROL, 'z']),    # Cycle "healing" modes
+        (0x101010, 'Eyedrop', 'I'), # Cycle eyedropper/measure modes
+        (0x101010, 'Wand', 'W'),    # Cycle "magic wand" (selection) modes
+        (0x000040, 'Heal', 'J'),    # Cycle "healing" modes
 
         # Encoder button ---
         (0x000000, '', [Keycode.CONTROL, Keycode.ALT, 'S']) # Save As
